@@ -3,18 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Visual Thinking</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.svg">
+    <meta name="description" content="Ontdek tekenmethodes en visuele werkvormen voor Visual Thinking."/>
+    <title>Tekenmethodes</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <script src="js/script.js" defer></script>
   </head>
-  <body>
-    <header>
-      <nav>
-        <img src="images/logo.svg" alt="Logo van Visual Thinking" />
 
-        <ul>
-          <li class="dropdown">
+  <body>
+    <header class="header">
+      <nav class="navigation">
+        <a href="#" class="logo">
+          <img src="images/logo.svg" alt="Visual Thinking home" />
+        </a>
+
+        <button class="menu-toggle" type="button" title="Menu openen of sluiten">
+          <span class="menu-icon"></span>
+          <span class="menu-icon"></span>
+          <span class="menu-icon"></span>
+          <span class="menu-label">Menu</span>
+        </button>
+
+        <ul class="mobile-menu">
+          <li>
             <a href="#">Oefenen</a>
+            <ul>
+              <li><a href="#">Tekenmethodes</a></li>
+              <li><a href="#">Cursussen</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#">Verdiepen</a>
+            <ul>
+              <li><a href="#">Kennisclips</a></li>
+              <li><a href="#">Artikelen</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#">Inspiratie</a></li>
+          <li><a href="#">Over</a></li>
+        </ul>
+
+        <ul class="desktop-menu">
+          <li class="dropdown">
+            <a href="#">Oefenen <span class="chevron">⌄</span></a>
             <ul class="dropdown-menu">
               <li><a href="#">Tekenmethodes</a></li>
               <li><a href="#">Cursussen</a></li>
@@ -22,7 +55,7 @@
           </li>
 
           <li class="dropdown">
-            <a href="#">Verdiepen</a>
+            <a href="#">Verdiepen <span class="chevron">⌄</span></a>
             <ul class="dropdown-menu">
               <li><a href="#">Kennisclips</a></li>
               <li><a href="#">Artikelen</a></li>
@@ -34,79 +67,83 @@
         </ul>
 
         <div class="nav-icons">
-          <img src="images/search.svg" alt="Zoeken" />
-          <img src="images/person.svg" alt="Profiel" />
-          <img src="images/like.svg" alt="Favorieten" />
+          <a class="icon-link" href="#" title="Zoeken">
+            <img src="images/search.svg" alt="" />
+          </a>
 
-          <button>Materiaal indienen</button>
+          <a class="icon-link" href="#" title="Profiel">
+            <img src="images/person.svg" alt="" />
+          </a>
+
+          <a class="icon-link" href="#" title="Favorieten">
+            <img src="images/like.svg" alt="" />
+          </a>
+
+          <a class="submit-button" href="#">Materiaal indienen</a>
         </div>
       </nav>
     </header>
 
     <main>
-      <nav>
-        <ul class="breadcrumb">
+      <nav class="breadcrumb-nav">
+        <ol class="breadcrumb">
           <li><a href="#">Home</a></li>
           <li>Tekenmethodes</li>
-        </ul>
+        </ol>
       </nav>
 
       <section class="search-section">
-        <div class="search-bar">
-          <img src="images/search.svg" alt="Zoeken" />
-          <input type="text" placeholder="Zoeken" />
-          <img src="images/camera.svg" alt="" />
-        </div>
+        <form class="search-bar" action="#" method="get">
+          <img src="images/search.svg" alt="" />
+
+          <input type="search" name="" placeholder="Zoeken" />
+
+          <button type="button" class="camera-button" title="Zoeken met afbeelding" >
+            <img src="images/camera.svg" alt="" />
+          </button>
+        </form>
       </section>
 
       <section class="categories">
-        <a href="#" class="filter-button">
+        <a href="#" class="filter-button" title="Filters">
           <img src="images/filter.svg" alt="" />
         </a>
 
-        <a href="#" class="category">
-          <img src="" alt="" />
-          <span>Bekijk alles</span>
-        </a>
+        <div class="category-list">
+          <a href="#" class="category">
+            <span class="category-circle" id="reflecteren"></span>
+            <span>Leren over jezelf en Reflecteren</span>
+          </a>
 
-        <a href="#" class="category">
-          <img src="" alt="" />
-          <span>Op vraag</span>
-        </a>
+          <a href="#" class="category">
+            <span class="category-circle" id="onderzoeken"></span>
+            <span>Onderzoeken en Begrijpen</span>
+          </a>
 
-        <a href="#" class="category">
-          <img src="" alt="" />
-          <span>Leren over jezelf en Reflecteren</span>
-        </a>
+          <a href="#" class="category">
+            <span class="category-circle" id="creatief"></span>
+            <span>Creatief denken</span>
+          </a>
 
-        <a href="#" class="category">
-          <img src="" alt="" />
-          <span>Onderzoeken en Begrijpen</span>
-        </a>
+          <a href="#" class="category">
+            <span class="category-circle" id="organiseren"></span>
+            <span>Organiseren en Plannen</span>
+          </a>
 
-        <a href="#" class="category">
-          <img src="" alt="" />
-          <span>Creatief denken</span>
-        </a>
+          <a href="#" class="category">
+            <span class="category-circle" id="communiceren"></span>
+            <span>Communiceren en Presenteren</span>
+          </a>
 
-        <a href="#" class="category">
-          <img src="" alt="" />
-          <span>Organiseren en Plannen</span>
-        </a>
-
-        <a href="#" class="category">
-          <img src="" alt="" />
-          <span>Communiceren en Presenteren</span>
-        </a>
-
-        <a href="#" class="category">
-          <img src="" alt="" />
-          <span>Leren over anderen</span>
-        </a>
+          <a href="#" class="category">
+            <span class="category-circle" id="anderen"></span>
+            <span>Leren over anderen</span>
+          </a>
+        </div>
       </section>
 
       <section class="methodes">
-        <h2 class="methodes-titel">Leren over jezelf en Reflecteren</h2>
+        <h1 class="methodes-titel">Leren over jezelf en Reflecteren</h1>
 
         <a href="#" class="methodes-video">
           <img
@@ -114,6 +151,7 @@
             alt="Een hand tekent een roadmap op een flipover"
           />
           <span class="play-knop"></span>
+          <span class="visually-hidden">Bekijk de video over reflecteren</span>
         </a>
 
         <ul class="methodes-grid">
@@ -123,66 +161,77 @@
               <span>Roadmap</span>
             </a>
           </li>
+
           <li>
             <a href="#" class="methode">
               <img src="images/gezichtspunten.svg" alt="" />
               <span>Cirkel van gezichtspunten</span>
             </a>
           </li>
+
           <li>
             <a href="#" class="methode">
               <img src="images/over-jaar.svg" alt="" />
               <span>Over 5 jaar</span>
             </a>
           </li>
+
           <li>
             <a href="#" class="methode">
               <img src="images/diversiteitscirkel.svg" alt="" />
               <span>Diversiteitscirkel</span>
             </a>
           </li>
+
           <li>
             <a href="#" class="methode">
               <img src="images/metafoor.svg" alt="" />
               <span>Metafoor</span>
             </a>
           </li>
+
           <li>
             <a href="#" class="methode">
               <img src="images/kwaliteit.svg" alt="" />
               <span>Kwaliteiten tekenen</span>
             </a>
           </li>
+
           <li class="breed">
             <a href="#" class="methode">
               <img src="images/stroomschema.svg" alt="" />
               <span>Stroomschema</span>
             </a>
           </li>
+
           <li>
             <a href="#" class="methode">
               <img src="images/gebruiksaanwijzing.svg" alt="" />
               <span>Mijn gebruiksaanwijzing</span>
             </a>
           </li>
+
           <li>
             <a href="#" class="methode">
               <img src="images/stop-start.svg" alt="" />
               <span>Stop-start-doorgaan</span>
             </a>
           </li>
+
           <li class="vraag">
             <p>
               Welke methodes kan ik gebruiken om een reflectief vakproces
               visueel te maken?
             </p>
           </li>
+
           <li>
             <a href="#" class="methode">
               <img src="images/reflecteren.svg" alt="" />
               <span>Reflecteren op een situatie</span>
             </a>
           </li>
+
           <li>
             <a href="#" class="methode">
               <img src="images/sketchnote.svg" alt="" />
@@ -193,8 +242,52 @@
       </section>
     </main>
 
-    <footer>
-      
+    <footer class="footer">
+      <div class="footer-brand">
+        <a href="#" class="footer-logo">
+          <img src="images/logo.svg" alt="Visual Thinking home" />
+        </a>
+
+        <div class="social-links">
+          <a href="#">Instagram</a>
+          <a href="#">YouTube</a>
+          <a href="#">LinkedIn</a>
+        </div>
+
+        <p class="copyright">
+          © 2026 Company Distributors.<br />
+          Designed &amp; Developed by Charley Muhren
+        </p>
+      </div>
+
+      <nav class="footer-navigation">
+        <div>
+          <h2><a href="#">Oefenen</a></h2>
+          <a href="#">Tekenmethodes</a>
+          <a href="#">Cursussen</a>
+        </div>
+
+        <div>
+          <h2><a href="#">Verdiepen</a></h2>
+          <a href="#">Kennisclips</a>
+          <a href="#">Artikelen</a>
+        </div>
+
+        <div>
+          <h2><a href="#">Inspiratie</a></h2>
+        </div>
+
+        <div>
+          <h2><a href="#">Over</a></h2>
+          <a href="#">Community</a>
+        </div>
+      </nav>
+
+      <div class="footer-legal">
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Cookies</a>
+      </div>
     </footer>
   </body>
 </html>
