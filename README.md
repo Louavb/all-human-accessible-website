@@ -1,25 +1,32 @@
-# Accessible Website
-
-Ontwerp en maak voor een opdrachtgever een website toegankelijk volgens WCAG richtlijnen.
-
-De instructie van deze leertaak staat in [WIKI](https://github.com/fdnd-task/all-human-accessible-website/wiki)
+# Accessible Website – Tekenmethodes
 
 ## Inhoudsopgave
-
-  * [Beschrijving](#beschrijving)
-  * [Kenmerken](#kenmerken)
-  * [Bronnen](#bronnen)
-  * [Licentie](#licentie)
+- [Beschrijving](#beschrijving)
+- [Kenmerken](#kenmerken)
+- [Bronnen](#bronnen)
+- [Licentie](#licentie)
 
 ## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+
+Voor dit project heb ik een website gemaakt waarop je verschillende tekenmethodes kunt ontdekken. De website biedt inspiratie voor visuele werkvormen en helpt gebruikers om methodes te vinden die passen bij hun ideeën en doelen.
+
+Bij het maken van de website heb ik rekening gehouden met toegankelijkheid, zodat de website voor zoveel mogelijk mensen prettig te gebruiken is.
+
+Bekijk de website hier: https://louavb.github.io/all-human-accessible-website/
 
 ## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+
+- **HTML:** voor de structuur van de website.
+- **CSS:** voor de vormgeving en de responsive lay-out.
+- **JavaScript:** voor de kleine interactieve onderdelen van de website.
+- **Toegankelijkheid:** rekening gehouden met de WCAG-richtlijnen.
+- **Responsive design:** de website is geschikt voor verschillende schermformaten.
 
 ## Bronnen
 
+- [WCAG-richtlijnen](https://www.w3.org/WAI/standards-guidelines/wcag/)
+- [MDN Web Docs](https://developer.mozilla.org/)
+
 ## Licentie
+
 This project is licensed under the terms of the [MIT license](./LICENSE).
